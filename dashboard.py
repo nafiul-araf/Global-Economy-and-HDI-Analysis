@@ -12,8 +12,8 @@ warnings.filterwarnings("ignore")
 # Load Data
 @st.cache_data
 def load_data():
-    gdp = pd.read_excel("./World+Economic+Indicators/WorldBank.xlsx")
-    hdi = pd.read_csv("./World+Economic+Indicators/HDI.csv")
+    gdp = pd.read_excel(r"Data/WorldBank.xlsx")
+    hdi = pd.read_csv(r"Data/HDI.csv")
     return gdp, hdi
 
 gdp, hdi = load_data()
